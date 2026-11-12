@@ -9,26 +9,25 @@
       <meta name="keywords" content="order dessert online, Dessert Shop in Philadelphia">
       <!--fav-icon-->
       <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.png">
+      <link rel="preload" as="image" href="./assets/images/menu/sliderbanner1.webp" fetchpriority="high">
       <!--CSS Start-->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
       <!--  -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
       <!-- Link Swiper's CSS -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
-      <!--Icon CSS-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
       <!-- Google Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400..500&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
       <!--Responsive CSS-->
       <link rel="stylesheet" href="assets/css/style.css" />
       <link rel="stylesheet" href="assets/css/mobilemenu.css" />
       <link rel="stylesheet" href="assets/css/resp.css" />
        <!-- js script -->
-       <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
-       <script type="text/javascript" src="assets/js/jquery.sticky.js"></script>
-       <script type="text/javascript" src="assets/js/lenis.min.js"></script>
+       <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js" defer></script>
+       <script type="text/javascript" src="assets/js/jquery.sticky.js" defer></script>
+       <script type="text/javascript" src="assets/js/lenis.min.js" defer></script>
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer ></script> 
 
    </head>
@@ -55,37 +54,29 @@
             <div class="swiper mySwiper">
                <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                     <div class="content">
-                        <h1 class="title">Menus</h1>
-                     </div>
                      <div class="img">
-                        <img src="./assets/images/menu/sliderbanner1.png"/>
+                        <img src="./assets/images/menu/sliderbanner1.webp" fetchpriority="high"/>
                      </div>
                   </div>
                   <div class="swiper-slide" loading="lazy">
-                     <div class="content">
-                        <h1 class="title">Menus</h1>
-                     </div>
                      <div class="img">
-                        <img src="./assets/images/menu/sliderbanner2.png"/>
+                        <img src="./assets/images/menu/sliderbanner2.webp"/>
                      </div>
                   </div>
                   <div class="swiper-slide" loading="lazy">
-                     <div class="content">
-                        <h1 class="title">Menus</h1>
-                     </div>
                      <div class="img">
-                        <img src="./assets/images/menu/sliderbanner3.png"/>
+                        <img src="./assets/images/menu/sliderbanner3.webp"/>
                      </div>
                   </div>
                   <div class="swiper-slide" loading="lazy">
-                     <div class="content">
-                        <h1 class="title">Menus</h1>
-                     </div>
                      <div class="img">
-                        <img src="./assets/images/menu/sliderbanner4.png"/>
+                        <img src="./assets/images/menu/sliderbanner4.webp"/>
                      </div>
                   </div>
+               </div>
+               <!-- single fixed title for all slides -->
+               <div class="content">
+                  <h1 class="title">Menus</h1>
                </div>
                <div class="swiper-button-next">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right-icon lucide-move-right">
@@ -272,7 +263,7 @@
                               <h3>Choose Banana, NY Cheesecake, or Raspberry Marble Cheesecake</h3>
                               <p class="price-tag">Banana $7.53 Cheesecake $9.41</p>
                               <div class="tab-img my-2">
-                                 <img src="./assets/images/tabimage1.png" class="img-fluid" alt=""> 
+                                 <img decoding="async" width="1200" height="1152" loading="lazy" src="./assets/images/tabimage1.webp" class="img-fluid" alt=""> 
                               </div>
                               <div class="toppings show1">
                                  <h4>How Can I Have Smore...</h4>
@@ -291,7 +282,7 @@
                                  <p>Chocolate dipped and coated with biscoff cookie crumbs, then topped with salted caramel and brownie bits.</p>
                               </div>
                               <div class="tab-img my-2 toppings">
-                                 <img src="./assets/images/tabimage2.png" class="img-fluid" alt=""> 
+                                 <img decoding="async" width="1200" height="1152" loading="lazy" src="./assets/images/tabimage2.webp" class="img-fluid" alt=""> 
                               </div>
                               <div class="toppings">
                                  <h4>Barney Rubble Trouble</h4>
@@ -356,7 +347,7 @@
                      <div class="row justify-content-center mt-5">
                         <div class="col-lg-6 col-md-6">
                            <div class="tab-img my-2 toppings show1">
-                              <img src="./assets/images/tabimage3.jpg" class="img-fluid" alt=""> 
+                              <img decoding="async" width="1000" height="1000" loading="lazy" src="./assets/images/tabimage3.webp" class="img-fluid" alt=""> 
                            </div>
                         </div>
                      </div>
@@ -750,35 +741,35 @@
                            <div class="tab-list-details">
                               <div class="toppings show1">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage4.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage4.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Gourmet Death by Chocolate Ice Cream Cake</h4>
                                  <p>A chocolate chocolate chip ice cream decorated with chocolate frosting and hershey's kisses. Round Feeds 6-10</p>
                               </div>
                               <div class="toppings show1">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage6.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage6.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Strawberry Shortcake Ice Cream Cake</h4>
                                  <p>Strawberry ice cream with a sugar cookie crunch center. Feeds 6-10</p>
                               </div>
                               <div class="toppings">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage8.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage8.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Gourmet Snickers Ice Cream Cake</h4>
                                  <p>Vanilla ice cream packed with caramelly goodness, snickers chunks, and a cookie crunch. Frosted with vanilla whipped icing and topped with more caramel and snickers chunks! Feeds 6-10</p>
                               </div>
                               <div class="toppings">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage14.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage14.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Gourmet Cookie Dough Ice Cream Cake</h4>
                                  <p>Chocolate chip cookie dough ice cream with a cookie crunch frosted and topped with big chunks of cookie dough! Two sizes: round feeds 6-10, 1/4 sheet feeds 15-20</p>
                               </div>
                               <div class="toppings">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage12.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage12.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Traditional Ice Cream Cake</h4>
                                  <p>Vanilla and chocolate ice cream with a chocolate cookie crunch and whipped vanilla frosting. Various sizes feed 4-40!</p>
@@ -790,42 +781,42 @@
                            <div class="tab-list-details">
                               <div class="toppings show1">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage5.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage5.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Megawich</h4>
                                  <p>Two giant chocolate chip cookies surrounding decadent vanilla ice cream! Feeds 6-10</p>
                               </div>
                               <div class="toppings show1">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage7.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage7.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Gourmet Oreo Mudslide Ice Cream Cake</h4>
                                  <p>Coffee, oreo, and chocolate frosting. Feeds 6-10</p>
                               </div>
                               <div class="toppings">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage9.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage9.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Gourmet Mint Chip Ice Cream Cake</h4>
                                  <p>Mint chip ice cream with a cookie crunch frosted with green vanilla whipped icing, topped with chocolate chips. Two sizes: round feeds 6-10, 1/4 sheet feeds 15-20</p>
                               </div>
                               <div class="toppings">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage13.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage13.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Gourmet Cookie Monster Ice Cream Cake</h4>
                                  <p>Cookies n' cream meets cookie dough. Blue and amazing! Two sizes: round feeds 6-10, 1/4 sheet feeds 15-20</p>
                               </div>
                               <div class="toppings">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage11.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage11.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Gourmet PB Cup Ice Cream Cake</h4>
                                  <p>Vanilla peanut butter ice cream with chunks of pb cups, cookie crunch, then frosted with pb frosting and full size pb cups! Two sizes: round feeds 6-10, 1/4 sheet feeds 15-20</p>
                               </div>
                               <div class="toppings">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage10.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage10.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Large Gourmet Ice Cream Cake</h4>
                                  <p>Feeds 15-20 and available in all our most popular gourmet flavors!</p>
@@ -848,21 +839,21 @@
                            <div class="tab-list-details">
                               <div class="toppings show1">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage15.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage15.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Vegan Megawich</h4>
                                  <p>Two giant chocolate chip cookies with vanilla ice cream in between! Feeds 8-10 people. Decorated with chocolate chips or sequin sprinkles. </p>
                               </div>
                               <div class="toppings show1">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage16.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage16.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Vegan Cookie Monster Ice Cream Cake</h4>
                                  <p>Who says the best can't also be vegan? We took our top selling ice cream cake and made it vegan! A blue cross between cookies n' cream and cookie dough. Gorgeous and delicious!</p>
                               </div>
                               <div class="toppings show1">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage17.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage17.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Vegan Traditional Ice Cream Cake (GF)</h4>
                                  <p>A layer of vanilla and a layer of chocolate with an oreo cookie crumble in between. This ice cream cake is dairy free and vegan. Also gluten free! Feeds 6-8 people.</p>
@@ -873,14 +864,14 @@
                            <div class="tab-list-details">
                               <div class="toppings show1">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage18.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage18.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Vegan Traditional Ice Cream Cake 1/4 Sheet (GF)</h4>
                                  <p>Vegan chocolate ice cream and vegan vanilla ice cream with a gluten free oreo cookie crunch in between. Vegan. Gluten Free. Larger size, feeds 12-20.</p>
                               </div>
                               <div class="toppings show1">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage19.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage19.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Vegan Death by Chocolate Ice Cream Cake (GF)</h4>
                                  <p>Vegan chocolate ice cream with chocolate chips and gluten free oreos. Decorated with chocolate chips and gluten free oreos. Yum! <br> <span class="price-tag">gluten free</span></p>
@@ -901,7 +892,7 @@
                            <div class="tab-list-details">
                               <div class="toppings show1">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage20.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage20.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Cookie Cake</h4>
                                  <p>It takes us back to our childhood... yummy chocolate chip cookie plus frosting that we get to eat with a fork! Try our version - 8" round cookie and frosting, in your choice of cookie! We'll keep the chocolate chip in stock, but if you give us 6 hours notice or more we can custom make a flavor just for you! Feeds 4-8 </p>
@@ -912,7 +903,7 @@
                            <div class="tab-list-details">
                               <div class="toppings show1">
                                  <div class="mb-3">
-                                    <img src="./assets/images/menu/tabimage21.png" class="img-fluid" alt="">
+                                    <img decoding="async" width="500" height="500" loading="lazy" src="./assets/images/menu/tabimage21.webp" class="img-fluid" alt="">
                                  </div>
                                  <h4>Vegan Cookie Cake</h4>
                                  <p>Now available in vegan! Give us 6 hours notice or more and we can custom make a flavor just for you! Feeds 4-8<br> <span class="price-tag">vegan</span></p>
@@ -929,8 +920,9 @@
          <div id="footer"></div>
       </main>
       <!-- Swiper JS -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
       <script>
+      document.addEventListener("DOMContentLoaded", function () {
          var swiper = new Swiper(".menu-slider .mySwiper", {
          effect: "fade",
          crossFade: true,
@@ -964,6 +956,7 @@
             slideChangeTransitionEnd: function () {}
          }
          });
+      });
       </script>
 
       <!--Common Script-->
