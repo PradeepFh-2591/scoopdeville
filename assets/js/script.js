@@ -306,5 +306,30 @@ $(document)
 /* =========================================
   Footer section
 ========================================= */
-$("#footer").load("includes/footer.html");
+$("#footer").load("includes/footer.html", function () {
+  // Per-page override of the pinned mobile button (e.g. catering.html → "Get a Catering Quote")
+  const body = document.body;
+  const ctaText = body.dataset.bottomCtaText;
+  const ctaHref = body.dataset.bottomCtaHref;
+  if (ctaText || ctaHref) {
+    const $btn = $(this).find(".bottom-bar .order-btn").first();
+    if (ctaText) $btn.text(ctaText);
+    if (ctaHref) $btn.attr("href", ctaHref);
+
+    // In-page target: scroll to it without adding "#..." to the address bar
+    if (ctaHref && ctaHref.charAt(0) === "#") {
+      $btn.on("click", function (e) {
+        const target = document.querySelector(ctaHref);
+        if (!target) return;
+        e.preventDefault();
+        e.stopPropagation();
+        if (lenis) {
+          lenis.scrollTo(target);
+        } else {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    }
+  }
+});
 

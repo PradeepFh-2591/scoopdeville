@@ -502,6 +502,17 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
     .prodimg-lst {padding:0 10px !important;}
     .prodimg-lst::after {display:none;}
     .quote img {width: 30px;}
+    .privacy-card {padding:30px 18px; border-radius:20px;}
+    .privacy-card h1 {font-size:34px;}
+    .privacy-card h2 {font-size:24px;}
+    .privacy-card p, .privacy-card li {font-size:17px;}
+    .fran-photos {flex-direction:column; gap:15px;}
+    .numbers-box {padding:35px 16px 30px;}
+    .number-value {font-size:28px;}
+    .number-label {font-size:17px;}
+    .territory-lst li {font-size:19px; padding:6px 18px;}
+    .fran-contact {font-size:18px; flex-direction:column;}
+    .fran-contact-bottom h3 {font-size:26px;}
 
 }
 

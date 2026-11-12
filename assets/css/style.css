@@ -261,6 +261,15 @@ span.sm {font-size:30px; line-height:1.2; display:inline-block; margin-top:10px;
 
 /* ---------- Accessibility page ---------- */
 .accessibility-page {height:100dvh; display:flex; align-items:center; justify-content:center;}
+.privacy-card {max-width:1200px; margin:0 auto; background:#fff; border-radius:30px; border:solid 5px var(--clr-dropdown-link-hov); box-shadow:-10px 10px var(--clr-dropdown-link-hov); padding:50px; text-align:left;}
+.privacy-card h1 {font-size:51px; text-transform:uppercase; text-align:center; margin-bottom:5px;}
+.privacy-card .privacy-date {text-align:center; font-style:italic; margin-bottom:30px;}
+.privacy-card h2 {font-size:30px; text-shadow:-2px 2px var(--clr-dropdown-link-hov); margin:30px 0 10px;}
+.privacy-card p, .privacy-card li {font-size:19px; line-height:1.6; color:#000; font-weight:400; opacity:1;}
+.privacy-card p {margin:0 0 12px;}
+.privacy-card ul {padding-left:22px; margin-bottom:0;}
+.privacy-card li {list-style-type:disc; margin-bottom:8px;}
+.privacy-card a {color:#D33880; text-decoration:underline; word-break:break-word;}
 
 /* ---------- Fundraising page ---------- */
 .fund-card .split-wrap::after {opacity:0.7; z-index:0;}
@@ -320,6 +329,7 @@ div#fund-content h2 {text-shadow:unset;}
 .cater-grid {row-gap:40px;}
 .cater-area {padding:60px 0 40px;}
 .cater-steps-sec {padding:60px 0 40px;}
+#quote {scroll-margin-top:120px;}
 .cater-steps-sec h2 {margin-bottom:10px;}
 .cater-know {padding:60px 0 80px;}
 .cater-know h2 {margin-bottom:45px;}
@@ -470,6 +480,31 @@ div#fund-content h2 {text-shadow:unset;}
 .become-blk {position:relative; padding-bottom:80px; text-align:center;}
 .become-blk .order-btn {background-color:var(--clr-bg-header); color:var(--clr-light);}
 .become-blk .order-btn:hover {background-color:var(--clr-dropdown-link-hov); color:var(--clr-bg-header); border-color:var(--clr-bg-header); box-shadow:rgb(255 255 255) 1px 5px;}
+.prod-cnt::after {display:none;}
+.fran-photos {position:relative; z-index:1; display:flex; gap:20px; justify-content:center; margin-bottom:40px;}
+.fran-photo {flex:1 1 0; max-width:560px; border:8px solid var(--clr-bg-header); border-radius:20px; overflow:hidden;}
+.fran-photo img {width:100%; height:100%; aspect-ratio:4/3; object-fit:cover; display:block;}
+.fran-numbers {background:var(--clr-dropdown-link-hov); text-align:center;}
+.numbers-box {background:var(--clr-bg-header); border:5px solid var(--clr-light); border-radius:30px; box-shadow:-10px 10px var(--clr-light); padding:50px 30px 40px; max-width:1100px; margin:0 auto;}
+.numbers-box h2 {font-weight:700; margin-bottom:30px;}
+.numbers-grid {row-gap:20px;}
+.number-item {display:flex; flex-direction:column; justify-content:center; height:100%; padding:10px;}
+.number-label {font-size:20px; text-transform:uppercase; letter-spacing:1px; color:#000; margin-bottom:8px;}
+.number-value {font-size:38px; font-weight:700; line-height:1.15; color:#D33880;}
+.fran-small {font-size:15px; font-style:italic; margin:25px 0 0; opacity:0.85;}
+.fran-cta {margin-top:40px;}
+.fran-numbers .order-btn {background-color:var(--clr-bg-header); color:var(--clr-light);}
+.fran-numbers .order-btn:hover {background-color:var(--clr-light); color:var(--clr-bg-header); border-color:var(--clr-bg-header); box-shadow:rgb(255 255 255) 1px 5px;}
+.territory-blk {position:relative; text-align:center; margin-bottom:60px; color:var(--clr-bg-header);}
+.territory-lst {display:flex; flex-wrap:wrap; justify-content:center; gap:15px; padding:0; margin:0;}
+.territory-lst li {list-style:none; background:var(--clr-bg-header); color:#D33880; border-radius:30px; padding:8px 26px; font-size:24px; font-weight:600;}
+.territory-blk .fran-small {color:var(--clr-bg-header);}
+.fran-contact {list-style:none; padding:0; margin:25px 0 0; display:flex; flex-wrap:wrap; justify-content:center; gap:10px 35px; font-size:22px; color:var(--clr-bg-header);}
+.fran-contact a {color:var(--clr-bg-header); text-decoration:underline; word-break:break-word;}
+.fran-contact a:hover {color:var(--clr-dropdown-link-hov);}
+.fran-contact i {margin-right:6px;}
+.fran-contact-bottom {position:relative; text-align:center; margin-top:60px;}
+.fran-contact-bottom h3 {font-size:36px; font-weight:700; color:var(--clr-bg-header); text-shadow:none; text-transform:uppercase;}
 
 /* ---------- Not used by any page ---------- */
 .text-purple {color:var(--primary-color) !important;}
