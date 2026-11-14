@@ -308,6 +308,13 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
 
     /* ---------- Common (all pages) ---------- */
     h1 {font-size:50px; margin:0px 0px 30px 0px;}
+    .home-intro {margin:0 auto 40px;}
+    .cakes-home .cater-content {min-height:auto; padding:40px 20px;}
+    .home-shops {padding:55px 0 65px;}
+    .shops-head {gap:12px; margin-bottom:30px;}
+    .shops-deco {width:45px; height:60px;}
+    .shop-card {box-shadow:-7px 7px var(--clr-dropdown-link-hov);}
+    .shop-body h3 {font-size:32px;}
 
     /* ---------- Header & mobile menu ---------- */
     .logo {flex: 0 1 160px; margin-bottom: -60px;}
@@ -503,6 +510,15 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
     .prodimg-lst::after {display:none;}
     .quote img {width: 30px;}
     .privacy-card {padding:30px 18px; border-radius:20px;}
+    .blog-banner {padding:100px 0;}
+    .blog-banner-sub {font-size:19px;}
+    .blog-article {padding:30px 18px; border-radius:20px;}
+    .blog-article p, .blog-article li {font-size:18px;}
+    .blog-article .blog-lead {font-size:20px;}
+    .blog-article h2 {font-size:27px;}
+    .blog-article blockquote {font-size:20px; padding:15px 18px;}
+    .blog-card h2 {font-size:24px;}
+    .blog-cta h3 {font-size:28px;}
     .privacy-card h1 {font-size:34px;}
     .privacy-card h2 {font-size:24px;}
     .privacy-card p, .privacy-card li {font-size:17px;}

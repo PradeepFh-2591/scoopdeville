@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <!-- Blog pages live in /blog/, so resolve every relative link (header, footer, images) from the site root -->
+      <base href="/">
+      <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+      <!--
+         NEW POST CHECKLIST
+         1. Copy this file to blog/<short-name>.html (e.g. blog/how-we-ship-ice-cream.html)
+         2. Set the <title> and meta description below (unique for every post)
+         3. Replace the banner image, title, date and body
+         4. Add a card for it at the top of blog/index.html
+         5. Add its URL to sitemap.xml
+         6. Delete the "noindex" line below
+      -->
+      <title>[Post Title] | Scoop DeVille</title>
+      <meta name="description" content="[About 150 characters describing this post — shown under the title in Google results.]">
+      <!-- REMOVE this line on real posts -->
+      <meta name="robots" content="noindex">
+      <!--fav-icon-->
+      <link rel="shortcut icon" type="image/jpg" href="assets/images/favicon.png">
+      <!--CSS Start-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400..500&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+      <!--Responsive CSS-->
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/mobilemenu.css" />
+      <link rel="stylesheet" href="assets/css/resp.css" />
+      <!-- js script -->
+      <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js" defer></script>
+      <script type="text/javascript" src="assets/js/jquery.sticky.js" defer></script>
+      <script type="text/javascript" src="assets/js/lenis.min.js" defer></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer ></script>
+   </head>
+   <body id="page-body" class="home-body">
+      <main>
+         <!-- mobile menu starts -->
+         <div id="mobile-menu"></div>
+         <!-- mobile menu ends -->
+         <!-- header starts -->
+         <div id="header"></div>
+         <!-- header ends -->
+
+         <!-- post banner: swap the image for the post's main photo -->
+         <section class="about-banner cater-banner blog-banner" style="background-image: url('assets/images/catering/catering-bg.webp');">
+            <div class="container text-center">
+               <div class="about-title">
+                  <span class="blog-tag">Seasonal</span>
+                  <h1>[Post Title Goes Here]</h1>
+                  <time class="blog-date" datetime="2026-11-13">November 13, 2026</time>
+               </div>
+            </div>
+         </section>
+
+         <!-- post body -->
+         <section class="blog-post">
+            <div class="container">
+               <article class="blog-article">
+                  <a href="blog/" class="blog-back"><i class="fa-solid fa-arrow-left"></i> All stories</a>
+
+                  <p class="blog-lead">[Opening paragraph. One or two sentences that tell the reader what this post is about. This is shown a little larger.]</p>
+
+                  <p>[Body paragraph. Write normally — links look like <a href="menu.html">this link to our menu</a>.]</p>
+
+                  <h2>[Section heading]</h2>
+                  <p>[Paragraph under the heading.]</p>
+                  <ul>
+                     <li>[Bullet point]</li>
+                     <li>[Bullet point]</li>
+                     <li>[Bullet point]</li>
+                  </ul>
+
+                  <figure>
+                     <img width="1200" height="800" loading="lazy" src="assets/images/catering/blends-collage.webp" alt="[Describe the photo for people who can't see it]" class="img-fluid">
+                     <figcaption>[Optional photo caption]</figcaption>
+                  </figure>
+
+                  <h2>[Another section heading]</h2>
+                  <p>[Paragraph.]</p>
+
+                  <blockquote>[Optional pull quote — a customer review or a line from the team.]</blockquote>
+
+                  <p>[Closing paragraph.]</p>
+
+                  <!-- call to action: keep the links that fit the post, delete the rest -->
+                  <div class="blog-cta">
+                     <h3>Hungry yet?</h3>
+                     <div class="step-links">
+                        <a href="location.html" class="order-btn"><i class="fa-solid fa-ice-cream"></i> Order online</a>
+                        <a href="catering.html" class="order-btn"><i class="fa-solid fa-truck"></i> Book catering</a>
+                        <a href="cakeorder.html" class="order-btn"><i class="fa-solid fa-cake-candles"></i> Order a cake</a>
+                     </div>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <!-- Footer section -->
+         <div id="footer"></div>
+      </main>
+      <!--Common Script-->
+      <script type="text/javascript" src="assets/js/script.js" defer></script>
+   </body>
+</html>

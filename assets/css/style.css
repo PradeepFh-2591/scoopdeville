@@ -128,6 +128,34 @@ body .uwy.userway_p1 .userway_buttons_wrapper {top:160px !important;}
 #split-wrap::after {content:''; position:absolute; top:22px; bottom:0; left:31px; background:url("../../assets/images/cap.webp") no-repeat center/contain; width:190px; background-position:top; z-index:2; animation-name:shake; animation-duration:0.75s; animation-iteration-count:infinite; animation-direction:alternate; animation-timing-function:steps(2);}
 .video-custom-play.show-icon .video-play-icon {opacity:1 !important;}
 .video-play-icon {transition:opacity 0.4s ease;}
+/* Homepage intro, cakes & shops */
+.home-intro {max-width:900px; margin:-40px auto 100px;}
+.home-intro p {margin:0 auto 18px; line-height:1.5;}
+.cakes-home {background-image:url("../../assets/images/cakes/cake-bg.webp");}
+.cakes-home .cater-content {height:auto; min-height:440px; padding:50px 40px;}
+.cakes-home .scoop-content p {max-width:620px;}
+.home-shops {padding:80px 0 90px;}
+.shops-head {display:flex; align-items:center; justify-content:center; gap:25px; margin-bottom:45px;}
+.shops-deco {width:70px; height:90px; background:url("../../assets/images/cone.webp") no-repeat center/contain; animation:shake 0.75s steps(2) infinite alternate;}
+.shops-deco-r {background-image:url("../../assets/images/icecream.webp"); animation-name:shake-1;}
+.shop-card {position:relative; height:100%; display:flex; flex-direction:column; background:#fff; border-radius:30px; border:solid 5px var(--clr-dropdown-link-hov); box-shadow:-10px 10px var(--clr-dropdown-link-hov); overflow:hidden; transition:transform 0.3s, box-shadow 0.3s;}
+.shop-card::after {content:''; position:absolute; inset:0; background:url("../../assets/images/flakes.webp") repeat center/contain; opacity:0.35; pointer-events:none;}
+.shop-card:hover {transform:translate(4px, -4px); box-shadow:-14px 14px var(--clr-dropdown-link-hov);}
+.shop-band {position:relative; z-index:1; background:var(--clr-light); color:#fff; font-family:"Raleway", sans-serif; font-weight:500; font-size:15px; letter-spacing:2px; text-transform:uppercase; padding:14px 10px 34px;}
+.shop-pin {position:relative; z-index:2; width:64px; height:64px; margin:-30px auto 0; border-radius:50%; background:#fff; border:solid 4px var(--clr-dropdown-link-hov); display:flex; align-items:center; justify-content:center; color:var(--clr-light); font-size:26px;}
+.shop-body {position:relative; z-index:1; flex:1; display:flex; flex-direction:column; align-items:center; padding:15px 22px 28px;}
+.shop-body h3 {font-size:36px; text-transform:uppercase; line-height:1.1; margin:6px 0 0;}
+.shop-body h3 a {color:inherit;}
+.shop-body h3 a:hover {color:var(--clr-dropdown-link-hov); text-shadow:-3px 3px #D33880;}
+.shop-address {font-size:19px; line-height:1.45; font-weight:400; margin:14px 0 22px; opacity:1;}
+.shop-phone {margin-top:auto; font-size:18px; padding:6px 22px;}
+.shop-phone i {font-size:15px; margin-right:4px;}
+.home-shops a.shop-phone, .home-shops a.shop-phone i {color:#fff !important;}
+.home-shops a.shop-phone:hover, .home-shops a.shop-phone:hover i {color:var(--clr-light) !important;}
+.shop-more {margin-top:16px; color:#D33880; font-family:"Raleway", sans-serif; font-weight:500; font-size:15px;}
+.shop-more:hover {color:var(--clr-dropdown-link-hov);}
+.shop-more i {margin-left:4px; transition:margin 0.3s;}
+.shop-more:hover i {margin-left:9px;}
 
 /* ---------- Page banners ---------- */
 .about-title {position:relative;}
@@ -505,6 +533,47 @@ div#fund-content h2 {text-shadow:unset;}
 .fran-contact i {margin-right:6px;}
 .fran-contact-bottom {position:relative; text-align:center; margin-top:60px;}
 .fran-contact-bottom h3 {font-size:36px; font-weight:700; color:var(--clr-bg-header); text-shadow:none; text-transform:uppercase;}
+
+/* ---------- Blog (blog/index.html & posts) ---------- */
+.blog-banner {padding:150px 0; background-position:center; background-size:cover; background-repeat:no-repeat;}
+.blog-banner .about-title {z-index:1;}
+.blog-banner-sub {color:#fff; font-size:24px; margin:15px auto 0; opacity:1;}
+.blog-banner .blog-tag {margin-bottom:15px;}
+.blog-banner .blog-date {color:#fff; margin-top:15px;}
+.blog-tag {display:inline-block; background:var(--clr-light); color:#fff; border-radius:30px; padding:3px 14px; font-size:14px; text-transform:uppercase; letter-spacing:1px;}
+.blog-date {display:block; font-size:16px; font-style:italic; color:#555;}
+.blog-grid {row-gap:40px;}
+.blog-card {background:#fff; border-radius:30px; border:solid 5px var(--clr-dropdown-link-hov); box-shadow:-10px 10px var(--clr-dropdown-link-hov); overflow:hidden; height:100%; display:flex; flex-direction:column; transition:transform 0.3s;}
+.blog-card:hover {transform:translateY(-5px);}
+.blog-card-img {display:block; aspect-ratio:4/3; overflow:hidden;}
+.blog-card-img img {width:100%; height:100%; object-fit:cover; transition:transform 0.4s;}
+.blog-card:hover .blog-card-img img {transform:scale(1.05);}
+.blog-card-body {padding:25px 25px 30px; display:flex; flex-direction:column; flex:1;}
+.blog-card-body .blog-tag {align-self:flex-start; margin-bottom:10px;}
+.blog-card h2 {font-size:28px; line-height:1.15; text-transform:none; text-shadow:-2px 2px var(--clr-dropdown-link-hov); margin:8px 0 10px;}
+.blog-card h2 a {color:inherit;}
+.blog-card p {font-size:18px; font-weight:400; margin:0 0 20px; opacity:1;}
+.blog-more {margin-top:auto; color:#D33880; font-weight:600; font-size:18px;}
+.blog-more:hover {color:var(--clr-dropdown-link-hov);}
+.blog-more i {margin-left:6px; transition:margin 0.3s;}
+.blog-more:hover i {margin-left:10px;}
+.blog-article {max-width:850px; margin:0 auto; background:#fff; border-radius:30px; border:solid 5px var(--clr-dropdown-link-hov); box-shadow:-10px 10px var(--clr-dropdown-link-hov); padding:50px;}
+.blog-back {display:inline-block; color:#D33880; font-size:17px; margin-bottom:20px;}
+.blog-back:hover {color:var(--clr-dropdown-link-hov);}
+.blog-article p, .blog-article li {font-size:20px; line-height:1.7; font-weight:400; color:#000; opacity:1;}
+.blog-article p {margin:0 0 20px;}
+.blog-article .blog-lead {font-size:24px; line-height:1.5;}
+.blog-article h2 {font-size:34px; text-transform:none; text-shadow:-2px 2px var(--clr-dropdown-link-hov); margin:40px 0 15px;}
+.blog-article ul {padding-left:24px; margin-bottom:20px;}
+.blog-article li {list-style-type:disc; margin-bottom:6px;}
+.blog-article a:not(.order-btn):not(.blog-back) {color:#D33880; text-decoration:underline;}
+.blog-article figure {margin:30px 0;}
+.blog-article figure img {width:100%; border-radius:20px; border:solid 4px var(--clr-dropdown-link-hov);}
+.blog-article figcaption {font-size:16px; font-style:italic; color:#555; text-align:center; margin-top:10px;}
+.blog-article blockquote {border-left:6px solid var(--clr-light); background:#fdeef5; border-radius:0 20px 20px 0; padding:20px 25px; margin:30px 0; font-size:24px; font-style:italic; color:#D33880;}
+.blog-cta {text-align:center; margin-top:50px; padding-top:40px; border-top:3px dashed var(--clr-dropdown-link-hov);}
+.blog-cta h3 {font-size:36px; text-transform:uppercase;}
+.blog-cta .step-links {margin-top:25px;}
 
 /* ---------- Not used by any page ---------- */
 .text-purple {color:var(--primary-color) !important;}
