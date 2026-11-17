@@ -19,7 +19,7 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
     .menu {padding: 0 60px;}
     .logo {flex: 0 1 240px; margin-bottom: -100px;}
     .logo a img {width: 240px;}
-    .is-sticky .logo img {width: 200px;}
+    .is-sticky .logo a img {transform:scale(0.83);}
     .menu-list {flex: 0 1 calc(100% - 240px);}
     .menu-list ul.main-menu li a {font-size: 15px;}
     .menu-list ul.main-menu li.has-mega-menu ul.submenu li a {font-size: 16px;}
@@ -32,7 +32,8 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
 
     /* ---------- Common (all pages) ---------- */
     h1 {font-size:65px; margin:0px 0px 66px 0px;}
-    h2 {font-size:55px;}
+    h2 {font-size:46px;}
+    h3 {font-size:46px;}
     p {font-size:19px;}
     section {padding:52px 0;}
 
@@ -40,7 +41,7 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
     .menu {padding: 0 40px;}
     .logo {flex: 0 1 200px; margin-bottom: -80px;}
     .logo a img {width: 200px;}
-    .is-sticky .logo img {width: 180px;}
+    .is-sticky .logo a img {transform:scale(0.9);}
     .head-btn a {padding: 8px 25px;}
     .menu-list ul.main-menu {column-gap: 15px;}
     .menu-list {flex: 0 1 calc(100% - 200px);}
@@ -61,7 +62,7 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
     .showMoreButton {padding:8px 35px; font-size:17px;}
 
     /* ---------- SEO h1 tags (Locations, Wholesale, Catering Order) ---------- */
-    .location-details > h1.h1-partner-title {font-size:55px;}
+    .location-details > h1.h1-partner-title {font-size:46px;}
 
     /* ---------- Fundraising page ---------- */
     #fund-content p {font-size:14px; margin:14px auto;}
@@ -110,7 +111,8 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
 
     /* ---------- Common (all pages) ---------- */
     h1 {font-size:55px;}
-    h2 {font-size:54px;}
+    h2 {font-size:42px;}
+    h3 {font-size:40px;}
     p {margin:18px auto;}
     .order-btn {padding:5px 17px;}
     .order-btn {font-size:15px;}
@@ -133,7 +135,18 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
 
     /* ---------- SEO h1 tags (Locations, Wholesale, Catering Order) ---------- */
     .location-title h1.h1-visit-text {margin:18px auto;}
-    .location-details > h1.h1-partner-title {font-size:54px;}
+    .location-details > h1.h1-partner-title {font-size:42px;}
+    .partner-content h2, .partner-content h1.h1-branch-title {font-size:44px;}
+    .tab-pane h2 {font-size:40px;}
+    .tab-pane h3 {font-size:32px;}
+    .privacy-card h1 {font-size:44px;}
+    .cake-custom h2 {font-size:38px;}
+    .shop-body h3 {font-size:32px;}
+    .feature-body h2 {font-size:30px;}
+    .feature-media {flex-basis:36%;}
+    .number-value {font-size:32px;}
+    .fran-contact-bottom h3 {font-size:32px;}
+    .cater-miles .miles-num {font-size:95px;}
 
     /* ---------- Fundraising page ---------- */
     #fund-content h2 {font-size: 23px;}
@@ -208,9 +221,9 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
 @media (max-width: 991px) {
 
     /* ---------- Common (all pages) ---------- */
-    h1 {font-size:53px;}
-    h2 {font-size:46px;}
-    h3 {font-size:38px;}
+    h1 {font-size:48px;}
+    h2 {font-size:38px;}
+    h3 {font-size:34px;}
     h4 {font-size:18px;}
     p {font-size:18px;}
 
@@ -218,7 +231,14 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
     .menu {padding: 0 20px;}
     .logo {flex: 0 1 180px; margin-bottom: -70px;}
     .logo a img {width: 180px;}
-    .is-sticky .logo img {width: 160px;}
+    .is-sticky .logo a img {transform:translateY(-11px) scale(0.65);}
+    .home-features {padding:50px 0;}
+    .feature-card {min-height:300px;}
+    .feature-body {padding:28px 26px 26px;}
+    .feature-body h2 {font-size:28px;}
+    .video-container {height:calc(100vh - var(--header-h, 90px)); height:calc(100svh - var(--header-h, 90px));}
+    /* accessibility button sits in the header bar, left of the menu icon */
+    body .uwy.userway_p1 .userway_buttons_wrapper {top:calc(var(--header-h, 94px) / 2 - 24px) !important; left:auto !important; right:18px !important;}
     body.mobile-menu-open .logo , body.mobile-menu-open .is-sticky .logo img , body.mobile-menu-open .logo img {width: 120px;}
     .mobile-menu {top: 117px; height: calc(100vh - 117px);}
 
@@ -230,12 +250,27 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
 
     /* ---------- Locations, About, Wholesale & order boxes ---------- */
     .location-details {padding:13px; padding-bottom:12px;}
+    .location-details.fund-contact {padding:28px 20px;}
     .our-locations h4 {font-family:"Raleway"; text-transform:uppercase; color:#3e3c3c; text-shadow:unset; text-decoration:underline double var(--clr-light) 1px; text-underline-offset:6px;}
     .location-details::before {opacity:0.4;}
     .contact-info-item {padding:16px 0px;}
 
     /* ---------- SEO h1 tags (Locations, Wholesale, Catering Order) ---------- */
-    .location-details > h1.h1-partner-title {font-size:46px;}
+    .location-details > h1.h1-partner-title {font-size:38px;}
+    .partner-content h2, .partner-content h1.h1-branch-title {font-size:40px;}
+    .tab-pane h2 {font-size:36px;}
+    .tab-pane h3 {font-size:30px;}
+    .privacy-card h1 {font-size:40px;}
+    .privacy-card h2 {font-size:27px;}
+    .cake-custom h2 {font-size:34px;}
+    .cater-card h3, .price-row h3 {font-size:26px;}
+    .know-cnt h3 {font-size:26px;}
+    .blend-card h3 {font-size:24px;}
+    .sundae-list h3, .blog-card h2 {font-size:24px;}
+    .blog-article h2 {font-size:30px;}
+    .blog-cta h3 {font-size:32px;}
+    .cater-step .step-num {font-size:42px;}
+    .location-title p, .location-title h1.h1-visit-text, span.sm, .cake-quote {font-size:26px;}
 
     /* ---------- Fundraising page ---------- */
     .fund-card #split-wrap::before {right: -20px; width: 65px;}
@@ -307,19 +342,39 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
 @media (max-width: 767px) {
 
     /* ---------- Common (all pages) ---------- */
-    h1 {font-size:50px; margin:0px 0px 30px 0px;}
+    h1 {font-size:40px; margin:0px 0px 30px 0px;}
+    h2 {font-size:34px;}
+    h3 {font-size:30px;}
+    .tab-pane h2 {font-size:32px;}
+    .tab-pane h3 {font-size:28px;}
+    .privacy-card h1 {font-size:36px;}
+    .location-details > h1.h1-partner-title {font-size:34px;}
+    .cake-custom h2 {font-size:30px;}
+    .number-value {font-size:30px;}
+    .fran-contact-bottom h3 {font-size:28px;}
+    .location-title p, .location-title h1.h1-visit-text, span.sm, .cake-quote {font-size:24px;}
     .home-intro {margin:0 auto 40px;}
     .cakes-home .cater-content {min-height:auto; padding:40px 20px;}
     .home-shops {padding:55px 0 65px;}
     .shops-head {gap:12px; margin-bottom:30px;}
     .shops-deco {width:45px; height:60px;}
     .shop-card {box-shadow:-7px 7px var(--clr-dropdown-link-hov);}
-    .shop-body h3 {font-size:32px;}
+    .shop-body h3 {font-size:28px;}
+    .video-container {height:calc(100vh - var(--header-h, 90px) - 75px - env(safe-area-inset-bottom)); height:calc(100svh - var(--header-h, 90px) - 75px - env(safe-area-inset-bottom));}
+    .shop-body h3 {text-shadow:-1px 1px var(--clr-dropdown-link-hov);}
+    .home-features {padding:45px 0;}
+    /* phones: stack photo on top, badge sits on the photo's edge */
+    .feature-card {flex-direction:column; min-height:0;}
+    .feature-media {flex:none; aspect-ratio:4 / 3; border-right:0; border-bottom:solid 5px var(--clr-dropdown-link-hov);}
+    .feature-body {align-items:center; text-align:center; padding:36px 20px 26px;}
+    .feature-badge {position:absolute; top:0; left:50%; transform:translate(-50%, -50%); margin:0;}
+    .feature-card {box-shadow:-7px 7px var(--clr-dropdown-link-hov);}
+    .feature-body h2 {font-size:28px; text-shadow:-2px 2px var(--clr-dropdown-link-hov);}
 
     /* ---------- Header & mobile menu ---------- */
     .logo {flex: 0 1 160px; margin-bottom: -60px;}
     .logo a img {width: 160px;}
-    .is-sticky .logo img {width: 140px;}
+    .is-sticky .logo a img {transform:translateY(-9px) scale(0.65);}
     body.mobile-menu-open .logo , body.mobile-menu-open .is-sticky .logo img , body.mobile-menu-open .logo img {width: 100px;}
     .mobile-menu {top: 101px; height: calc(100vh - 101px);}
 
@@ -343,11 +398,11 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
     #module .swiper .content a {padding:21px 40px; font-size:14px;}
 
     /* ---------- Locations, About, Wholesale & order boxes ---------- */
-    .partner-content h2 {font-size:38px;}
+    .partner-content h2 {font-size:34px;}
     .location-title {padding:48px 0px 0px 0px;}
 
     /* ---------- SEO h1 tags (Locations, Wholesale, Catering Order) ---------- */
-    .partner-content h1.h1-branch-title {font-size:38px;}
+    .partner-content h1.h1-branch-title {font-size:34px;}
 
     /* ---------- Fundraising page ---------- */
     #fund-content p {font-size:18px; margin:14px auto;}
@@ -371,10 +426,10 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
     .steams {background-size: auto 50%;}
     .franhero-cnt ul li {list-style-type: none; position: relative; margin-bottom: 8px; text-align: center; padding-left: 10px;}
     .franhero-cnt ul li:before {position: absolute; content: ""; width: 8px; height: 8px; top: 10px; left: 0px; background: var(--clr-bg-header); border-radius: 50%;}
-    .franhero-title h1 {font-size:42px;}
-    .steams h2 {font-size:35px;}
-    .rece-cnt h2 {font-size:40px;}
-    .rece-cnt span {font-size:36px;}
+    .franhero-title h1 {font-size:40px;}
+    .steams h2 {font-size:34px;}
+    .rece-cnt h2 {font-size:36px;}
+    .rece-cnt span {font-size:32px;}
     .become-blk {padding-bottom: 50px;}
 
     /* ---------- Old navigation (not used by any page) ---------- */
@@ -387,13 +442,27 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
 @media (max-width: 575px) {
 
     /* ---------- Common (all pages) ---------- */
-    h1 {font-size:33px; text-shadow:-2px 0px var(--clr-dropdown-link-hov);}
+    h1 {font-size:32px; text-shadow:-2px 0px var(--clr-dropdown-link-hov);}
+    h2 {font-size:28px; text-shadow:-2px 2px var(--clr-dropdown-link-hov);}
+    h3 {font-size:25px; text-shadow:-2px 2px var(--clr-dropdown-link-hov);}
+    .shop-body h3 {font-size:24px;}
+    .feature-body {padding:32px 18px 24px;}
+    .feature-body h2 {font-size:24px;}
+    .feature-body p {font-size:16px; margin-bottom:18px;}
+    .feature-badge {font-size:15px; padding:4px 14px; border-width:3px;}
+    .partner-content h2, .partner-content h1.h1-branch-title {font-size:28px;}
+    .location-details > h1.h1-partner-title {font-size:28px;}
+    .tab-pane h3 {font-size:24px;}
+    .cater-miles .miles-num {font-size:70px;}
+    .cater-miles .miles-txt {font-size:22px;}
+    .cater-step .step-num {font-size:36px;}
+    .location-title p, .location-title h1.h1-visit-text {font-size:21px;}
     p {font-size:18px;}
 
     /* ---------- Header & mobile menu ---------- */
     .logo {flex: 0 1 130px; margin-bottom: -60px;}
     .logo a img {width: 130px;}
-    .is-sticky .logo img {width: 110px;}
+    .is-sticky .logo a img {transform:translateY(-12px) scale(0.64);}
     body.mobile-menu-open .logo , body.mobile-menu-open .is-sticky .logo img , body.mobile-menu-open .logo img {width: 100px;}
     .mobile-menu {top: 101px; height: calc(100vh - 101px);}
     #accordian {padding: 40px 20px;}
@@ -403,7 +472,6 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
     #accordian ul ul li a {font-size: 19px; line-height: 22px;}
 
     /* ---------- Footer & bottom bar ---------- */
-    body .uwy.userway_p1 .userway_buttons_wrapper {top:151px !important;}
     .bottom-bar a {font-size: 19px;}
 
     /* ---------- Home page cards (also Catering & Fundraising) ---------- */
@@ -415,8 +483,8 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
 
     /* ---------- Menu & Flavors pages ---------- */
     .tab-list-details {padding:16.6px;}
-    .tab-pane h2 {font-size:40px;}
-    span.sm {font-size: 25px;}
+    .tab-pane h2 {font-size:28px;}
+    span.sm {font-size: 21px;}
     #module {height:40vh; background:#000;}
     #module .swiper .content {padding:7px 32px;}
 
@@ -427,7 +495,7 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
     /* ---------- Fundraising page ---------- */
     #fund-content p {font-size:15px; margin:14px auto;}
     .fund-card {height:620px !important;}
-    #fund-content h2 {font-size:29px;}
+    #fund-content h2 {font-size:24px;}
     #fund-card-1 .split-wrap::after {left: 55px; width: 90px; z-index: 0;}
     #fund-card-1 .split-wrap::before {right: 51px; width: 56px; z-index: 0;}
     .cater-page .menu-card, .cater-page .fund-card {height:auto !important; padding:45px 20px;}
@@ -450,7 +518,7 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
 
     /* ---------- Cake order page ---------- */
     .cake-panel {padding:35px 18px;}
-    .cake-quote {font-size:24px;}
+    .cake-quote {font-size:21px;}
     .cake-facts li {padding:12px 14px; gap:14px;}
     .cake-facts .fact-icon {flex-basis:46px; width:46px; height:46px; font-size:20px;}
     .cake-facts p {font-size:17px;}
@@ -460,7 +528,7 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
     .cake-prices > li > p, .cake-vegan-box p {font-size:17px;}
     .cake-vegan-box h2 span {font-size:20px;}
     .cake-contact p {font-size:18px;}
-    .cake-custom h2 {font-size:34px;}
+    .cake-custom h2 {font-size:26px;}
     .vegan-sizes .price-pill {font-size:18px;}
 
     /* ---------- Vegan page ---------- */
@@ -478,12 +546,12 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
 
     /* ---------- Franchise page ---------- */
     .fran-logo img {width:180px;}
-    .franhero-title h1 {font-size:35px;}
+    .franhero-title h1 {font-size:32px;}
     .franhero-cnt ul li {font-size:18px; text-align:center;}
     .marquee {padding:25px 0;}
     .marquee__item {font-size:25px; padding:0 30px;}
-    .rece-cnt h2 {font-size:30px;}
-    .rece-cnt span {font-size:28px;}
+    .rece-cnt h2 {font-size:28px;}
+    .rece-cnt span {font-size:24px;}
     .rece-cnt p {font-size:18px;}
     .rece-img {margin:0 auto; margin-bottom:30px; max-width:500px;}
     .rece-img img {min-height:auto; max-height:450px;}
@@ -492,7 +560,7 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
     .prod-lst ul {padding-left:30px;}
     .prod-lst ul li {font-size:20px;}
     .prod-cnt {position:relative; left:0; top:0; right:0; transform:none; width:100%; bottom:0; margin:auto; height:auto; text-align:center;}
-    .prod-cnt span {font-size:35px; width:100%; text-align:center;}
+    .prod-cnt span {font-size:32px; width:100%; text-align:center;}
     .prod-cnt span {display:none;}
     .prod-cnt span:first-child {display:block;}
     .prod-cnt::after {display:none;}
@@ -502,7 +570,7 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
     .steam-lft img {max-height:490px;}
     .steam-lst {padding-left:30px; padding-bottom:50px;}
     .steam-lst ul li {font-size:18px;}
-    .steams h2 {font-size:30px;}
+    .steams h2 {font-size:28px;}
     .word-slide {padding:40px 20px;}
     .slide-cnt p {font-size:20px;}
     .steams {background-size:auto 50%;}
@@ -519,16 +587,16 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
     .blog-article blockquote {font-size:20px; padding:15px 18px;}
     .blog-card h2 {font-size:24px;}
     .blog-cta h3 {font-size:28px;}
-    .privacy-card h1 {font-size:34px;}
-    .privacy-card h2 {font-size:24px;}
+    .privacy-card h1 {font-size:30px;}
+    .privacy-card h2 {font-size:22px;}
     .privacy-card p, .privacy-card li {font-size:17px;}
     .fran-photos {flex-direction:column; gap:15px;}
     .numbers-box {padding:35px 16px 30px;}
-    .number-value {font-size:28px;}
+    .number-value {font-size:26px;}
     .number-label {font-size:17px;}
     .territory-lst li {font-size:19px; padding:6px 18px;}
     .fran-contact {font-size:18px; flex-direction:column;}
-    .fran-contact-bottom h3 {font-size:26px;}
+    .fran-contact-bottom h3 {font-size:24px;}
 
 }
 
@@ -538,6 +606,14 @@ a[href^=tel] {text-decoration:inherit; color:inherit;}
 
     /* ---------- Footer & bottom bar ---------- */
     .bottom-bar a {font-size: 17px;}
+
+    /* ---------- Headings ---------- */
+    h1 {font-size:28px;}
+    h2 {font-size:25px;}
+    h3 {font-size:22px;}
+    .partner-content h2, .partner-content h1.h1-branch-title, .location-details > h1.h1-partner-title {font-size:25px;}
+    .tab-pane h2, .privacy-card h1, .franhero-title h1 {font-size:26px;}
+    .cake-custom h2, .steams h2, .rece-cnt h2 {font-size:24px;}
 
 }
 

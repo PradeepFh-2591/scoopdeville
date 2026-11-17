@@ -48,5 +48,6 @@ body.over { overflow: hidden;}
 body.mobile-menu-open .logo{margin-bottom: 0;}
 body.mobile-menu-open .logo , body.mobile-menu-open .is-sticky .logo img , body.mobile-menu-open .logo img{width: 150px;}
 body.mobile-menu-open .is-sticky .logo img{width: 150px;}
+body.mobile-menu-open .logo a img{transform:none;}
 body.mobile-menu-open .menu .ddsmoothmenu{padding: 10px 0;}
 

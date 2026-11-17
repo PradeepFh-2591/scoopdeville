@@ -2,6 +2,15 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
+      <!-- Google Tag Manager -->
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+      </script>
+      <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-N25T8HDN"></script>
+      <!-- End Google Tag Manager -->
       <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
       <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
       <title>Ice Cream Cakes in Philadelphia &amp; South Jersey | Scoop DeVille</title>
@@ -29,6 +38,9 @@
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" defer ></script> 
    </head>
    <body id="page-body" class="home-body">
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N25T8HDN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
       <!-- Loader -->
       <!-- <div id="loader">
          <img src="./assets/images/loading.gif" alt="Loading..." width="300" />
@@ -88,7 +100,7 @@
                         <ul class="cake-facts">
                            <li><span class="fact-icon"><i class="fa-solid fa-tag"></i></span><p>Custom cakes <strong>start at $50</strong>.</p></li>
                            <li><span class="fact-icon"><i class="fa-solid fa-calendar-days"></i></span><p>Custom cakes need <strong>a few days' notice</strong> — order them by phone, text, or email (below), not through the store order pages.</p></li>
-                           <li><span class="fact-icon"><i class="fa-solid fa-location-dot"></i></span><p>Pickup in Philly at <strong>1109 Walnut St</strong> or in South Jersey at <strong>101 Haddon Ave, Haddon Township</strong>.</p></li>
+                           <li><span class="fact-icon"><i class="fa-solid fa-location-dot"></i></span><p>Pickup in Philly at <strong><span data-loc="midtown" data-loc-field="street"></span></strong> or in South Jersey at <strong><span data-loc="haddon-township" data-loc-field="street"></span>, <span data-loc="haddon-township" data-loc-field="name"></span></strong>.</p></li>
                            <li><span class="fact-icon"><i class="fa-solid fa-truck"></i></span><p><strong>Delivery is available within 20 miles for a fee.</strong></p></li>
                            <li><span class="fact-icon"><i class="fa-solid fa-receipt"></i></span><p>We invoice through Square when you order; payment is due before pickup.</p></li>
                         </ul>
@@ -179,35 +191,8 @@
          <!-- store choices -->
          <section class="cake-order-branches cake-stores pt-0 pb-4" id="cake-stores">
             <div class="container text-center pt-4">
-               <div class="row justify-content-center">
-                  <div class="col-lg-6 col-md-12 mt-4 mt-lg-5 mb-0 mb-lg-4">
-                     <div class="location-details" id="cake-order-location">
-                        <div class="partner-content">
-                           <h2>Philadelphia</h2>
-                           <div class="margin-top">
-                              <a href="https://cakesmidtown.scoopsdeville.com/order-now" target="_blank" class="order-btn">Order Midtown</a>
-                              <a href="https://cakessouthst.scoopsdeville.com/order-now" target="_blank" class="order-btn">Order south st.</a>
-                           </div>
-                        </div>
-                        <!-- <div class="margin-top partner-content">
-                           <a href="https://scoop-deville-cakes-fishtown.square.site/#2" target="_blank" class="order-btn">fishtown (Delivery only)</a>
-                        </div> -->
-                     </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12 mt-4 mt-lg-5 mb-0 mb-lg-4">
-                     <div class="location-details" id="cake-order-location">
-                        <div class="partner-content">
-                           <h2>South Jersey</h2>
-                           <div class="margin-top flex-wrap">
-                              <a href="https://cakessouthjersey.scoopsdeville.com/order-now" target="_blank" class="order-btn">Order Haddon TWP</a>
-                              <a href="https://wildwoodcakes.scoopsdeville.com/order-now" target="_blank" class="order-btn">Order North Wildwood</a>
-
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  
-               </div>
+               <!-- Order buttons come from assets/data/locations.json -->
+               <div class="row justify-content-center" data-loc-render="cake-order"></div>
             </div>
          </section>
          <!--  End-->
@@ -215,6 +200,7 @@
          <div id="footer"></div>
       </main>
       <!--Common Script-->
+      <script type="text/javascript" src="assets/js/locations.js" defer></script>
       <script type="text/javascript" src="assets/js/script.js" defer></script>
    </body>
 </html>

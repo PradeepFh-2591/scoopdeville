@@ -1,0 +1,115 @@
+{
+  "brand": {
+    "name": "Scoop DeVille",
+    "siteUrl": "https://www.scoopdevilleicecream.com/",
+    "logo": "https://www.scoopdevilleicecream.com/assets/images/logo.webp",
+    "servesCuisine": "Ice Cream"
+  },
+  "regions": [
+    {
+      "name": "Philadelphia",
+      "area": "Philadelphia",
+      "locations": [
+        {
+          "id": "midtown",
+          "name": "Midtown Village",
+          "shortName": "Midtown",
+          "seasonal": false,
+          "address": {
+            "street": "1109 Walnut St",
+            "city": "Philadelphia",
+            "state": "PA",
+            "postalCode": "19107",
+            "country": "US"
+          },
+          "phone": "215-988-9992",
+          "hours": [
+            { "label": "Sun - Thurs", "days": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "11:00", "closes": "00:00" },
+            { "label": "Fri & Sat", "days": ["Friday", "Saturday"], "opens": "11:00", "closes": "01:00" }
+          ],
+          "links": {
+            "order": "https://midtown.scoopsdeville.com/order-now",
+            "soupOrder": "https://soupdevillemidtown.scoopsdeville.com/order-now",
+            "cakeOrder": "https://cakesmidtown.scoopsdeville.com/order-now",
+            "cateringOrder": "https://walnutst.scoopsdeville.com/order-now"
+          }
+        },
+        {
+          "id": "south-street",
+          "name": "South Street",
+          "shortName": "South St",
+          "seasonal": false,
+          "address": {
+            "street": "538 South St",
+            "city": "Philadelphia",
+            "state": "PA",
+            "postalCode": "19147",
+            "country": "US"
+          },
+          "phone": "215-988-9998",
+          "hours": [
+            { "label": "Sun - Thurs", "days": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "11:00", "closes": "00:00" },
+            { "label": "Fri & Sat", "days": ["Friday", "Saturday"], "opens": "11:00", "closes": "01:00" }
+          ],
+          "links": {
+            "order": "https://southst.scoopsdeville.com/order-now",
+            "soupOrder": "https://soupdevillesouthst.scoopsdeville.com/order-now",
+            "cakeOrder": "https://cakessouthst.scoopsdeville.com/order-now",
+            "cateringOrder": "https://cateringsouthjersey.scoopsdeville.com/order-now"
+          }
+        }
+      ]
+    },
+    {
+      "name": "New Jersey",
+      "area": "South Jersey",
+      "locations": [
+        {
+          "id": "haddon-township",
+          "name": "Haddon Township",
+          "shortName": "Haddon Twp",
+          "seasonal": false,
+          "address": {
+            "street": "101 Haddon Ave",
+            "city": "Haddon Township",
+            "state": "NJ",
+            "postalCode": "08108",
+            "country": "US"
+          },
+          "phone": "856-528-7501",
+          "hours": [
+            { "label": "Every Day", "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "11:00", "closes": "23:00" }
+          ],
+          "links": {
+            "order": "https://southjersey.scoopsdeville.com/order-now",
+            "soupOrder": "https://soupdevillesouthjersey.scoopsdeville.com/order-now",
+            "cakeOrder": "https://cakessouthjersey.scoopsdeville.com/order-now",
+            "cateringOrder": "https://haddontownship.scoopsdeville.com/order-now"
+          }
+        },
+        {
+          "id": "wildwood",
+          "name": "Wildwood",
+          "shortName": "Wildwood",
+          "seasonal": true,
+          "address": {
+            "street": "2022 Boardwalk",
+            "city": "North Wildwood",
+            "state": "NJ",
+            "postalCode": "08260",
+            "country": "US"
+          },
+          "phone": "609-551-4171",
+          "hours": [
+            { "label": "Every Day", "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "11:00", "closes": "23:00" }
+          ],
+          "links": {
+            "order": "https://northwildwoods.scoopsdeville.com/order-now",
+            "cakeOrder": "https://wildwoodcakes.scoopsdeville.com/order-now",
+            "cateringOrder": "https://wildwoodcatering.scoopsdeville.com/order-now"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -163,6 +163,9 @@ $(document).ready(function () {
   /* Load Header */
   $("#header").load("includes/header.html", function () {
 
+    // fill shop order links from assets/data/locations.json
+    if (window.ScoopLocations) ScoopLocations.apply(this);
+
     const $menu = $("header .menu");
   
     // wait until images inside header are loaded
@@ -182,7 +185,15 @@ $(document).ready(function () {
   
     function initSticky() {
       $menu.sticky({ topSpacing: 0 });
-  
+
+      // Expose the header bar height to CSS (used to fit the homepage video to the screen).
+      // The bar keeps the same height when sticky (only the logo is scaled), so one value fits.
+      function setHeaderHeight() {
+        document.documentElement.style.setProperty("--header-h", $menu.outerHeight() + "px");
+      }
+      setHeaderHeight();
+      $(window).on("resize", setHeaderHeight);
+
       // 🔑 force height refresh
       setTimeout(function () {
         $(window).trigger("resize");
@@ -192,7 +203,9 @@ $(document).ready(function () {
   });
   
   /* Load Mobile Menu */
-  $("#mobile-menu").attr("data-lenis-prevent", "").load("includes/mobilemenu.html");
+  $("#mobile-menu").attr("data-lenis-prevent", "").load("includes/mobilemenu.html", function () {
+    if (window.ScoopLocations) ScoopLocations.apply(this);
+  });
 
 
   // sticky 

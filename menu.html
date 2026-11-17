@@ -2,6 +2,15 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
+      <!-- Google Tag Manager -->
+      <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      dataLayer.push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+      </script>
+      <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-N25T8HDN"></script>
+      <!-- End Google Tag Manager -->
       <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" >
       <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
       <title>Menu | Scoop DeVille</title>
@@ -32,6 +41,9 @@
 
    </head>
    <body id="page-body" class="home-body">
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N25T8HDN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
       <!-- Loader -->
       <!-- <div id="loader">
          <img src="./assets/images/loading.gif" alt="Loading..." width="300" />
@@ -509,7 +521,7 @@
                            </div>
                            <div class="tab-list-details mt-5">
                               <h3>Breakfast Sandwiches by CHEEZY VEGAN</h3>
-                              <p class="price-tag">Currently available at 1109 Walnut ONLY.</p>
+                              <p class="price-tag">Currently available at <span data-loc="midtown" data-loc-field="street"></span> ONLY.</p>
                               <div class="toppings show1">
                                  <h4>McReeky</h4>
                                  <p>Char grilled marinated tofu, cheddar cheese, and sausage on an English muffin. <br> 10</p>
@@ -960,6 +972,7 @@
       </script>
 
       <!--Common Script-->
+      <script type="text/javascript" src="assets/js/locations.js" defer></script>
       <script type="text/javascript" src="assets/js/script.js" defer></script>
    </body>
 </html>
